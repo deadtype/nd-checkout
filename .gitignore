@@ -1,5 +1,7 @@
 _site
 bower_components
 .sass-cache
+.scssc
 .DS_Store
 .codekit-cache
+*.scssc
