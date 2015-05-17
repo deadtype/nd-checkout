@@ -111,7 +111,7 @@ body, input, select, textarea, label, button {
     font-weight: 600;
     display: block;
     background: white; }
-  .cx-checkoutpage-container input + input, .cx-checkoutpage-container input + .cx-select, .cx-checkoutpage-container .cx-select + input {
+  .cx-checkoutpage-container input + input, .cx-checkoutpage-container input + .cx-select, .cx-checkoutpage-container .cx-select + input, .cx-checkoutpage-container textarea + input, .cx-checkoutpage-container input + textarea, .cx-checkoutpage-container textarea + .cx-select, .cx-checkoutpage-container .cx-select + textarea {
     margin-top: -2px; }
   .cx-checkoutpage-container .cx-select {
     position: relative;

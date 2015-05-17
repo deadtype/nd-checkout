@@ -45,7 +45,7 @@
 				background: white;
 
 			}
-			input + input, input + .cx-select, .cx-select + input {
+			input + input, input + .cx-select, .cx-select + input, textarea + input, input + textarea, textarea + .cx-select, .cx-select + textarea {
 				margin-top: -2px;
 			}
 
