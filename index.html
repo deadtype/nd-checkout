@@ -11,9 +11,182 @@
 
     <body>
 
-      <div class='cx-checkoutpage-outer cx-line'>
-        <div class='cx-checkoutpage-container'>
+    <div>
+      <style>
 
+      
+.cx-line {
+  position: relative;
+  padding: 0em 0; }
+  .cx-line::before {
+    /* this is the vertical line */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -2px;
+    height: 100%;
+    width: 2px;
+    z-index: -10;
+    background: #cccccc; }
+
+.cx-section + .cx-section {
+  margin-top: 5em; }
+
+.cx-general-content {
+  width: 90%;
+  margin: 1em auto;
+  text-align: center;
+  line-height: 1.1; }
+  .cx-general-content .assitive-comment {
+    font-size: .65em;
+    width: 80%;
+    margin: auto;
+    background: white;
+    padding: .5em 0 0.75em; }
+  .cx-general-content .section-header {
+    margin-bottom: 2em; }
+  .cx-general-content .section-label {
+    background: white;
+    border: 2px solid #cccccc;
+    border-radius: 2em;
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    position: relative;
+    margin-bottom: .4em; }
+    .cx-general-content .section-label .section-label-inner {
+      font-size: .55em;
+      font-weight: 700;
+      position: absolute;
+      color: #595959;
+      left: 50%;
+      top: 50%;
+      bottom: auto;
+      right: auto;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      -moz-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+      -o-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%); }
+  .cx-general-content .section-title {
+    font-weight: 700;
+    font-size: .8em;
+    background: white;
+    padding: .5em 0 0.75em; }
+
+.cx-checkoutpage-container {
+  /* General Style */
+  /* Input Style */
+  /* Select Style */
+  /* Select Style */ }
+  .cx-checkoutpage-container input, .cx-checkoutpage-container select, .cx-checkoutpage-container textarea, .cx-checkoutpage-container label, .cx-checkoutpage-container .cx-select, .cx-checkoutpage-container textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    background: white;
+    color: #333; }
+  .cx-checkoutpage-container input::-webkit-input-placeholder {
+    color: #a6a6a6; }
+  .cx-checkoutpage-container input::-moz-placeholder {
+    color: #a6a6a6; }
+  .cx-checkoutpage-container input:-ms-input-placeholder {
+    color: #a6a6a6; }
+  .cx-checkoutpage-container input {
+    font-size: .8em;
+    width: 100%;
+    margin: 0;
+    border: none;
+    border-top: 2px solid #cccccc;
+    border-bottom: 2px solid #cccccc;
+    border-radius: 0;
+    padding: 1em;
+    box-shadow: none;
+    font-weight: 600;
+    display: block;
+    background: white; }
+  .cx-checkoutpage-container input + input, .cx-checkoutpage-container input + .cx-select, .cx-checkoutpage-container .cx-select + input {
+    margin-top: -2px; }
+  .cx-checkoutpage-container .cx-select {
+    position: relative;
+    border-top: 2px solid #cccccc;
+    border-bottom: 2px solid #cccccc;
+    border-radius: 0; }
+  .cx-checkoutpage-container .cx-select::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    right: 1em;
+    top: 50%;
+    margin-top: 0px;
+    display: block;
+    width: 19px;
+    height: 9px;
+    background: url("../images/select-arrow-black.svg") no-repeat center center;
+    pointer-events: none;
+    background-size: cover;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    opacity: .5; }
+  .cx-checkoutpage-container .cx-select select {
+    width: 100%;
+    border-radius: 0;
+    font-weight: 600;
+    display: block;
+    position: relative;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s; }
+  .cx-checkoutpage-container select::-ms-expand {
+    display: none; }
+  .cx-checkoutpage-container .cx-select-inner {
+    border: none;
+    padding: 1em;
+    font-size: .8em; }
+  .cx-checkoutpage-container textarea {
+    width: 100%;
+    margin: 0;
+    padding: 1em;
+    border: none;
+    border-top: 2px solid #cccccc;
+    border-bottom: 2px solid #cccccc;
+    border-radius: 0;
+    font-size: .8em;
+    font-weight: 600; }
+  .cx-checkoutpage-container .text-message {
+    height: 6em; }
+
+.cx-checkoutpage-container button, .cx-checkoutpage-container .button {
+  background: #4A90E2;
+  border-radius: none;
+  line-height: 1.4;
+  position: relative;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+  width: 100%;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  text-align: center;
+  display: block;
+  -webkit-transition: all, 0.3s;
+  -moz-transition: all, 0.3s;
+  transition: all, 0.3s; }
+  .cx-checkoutpage-container button .button-inner-text, .cx-checkoutpage-container .button .button-inner-text {
+    font-size: 1.5em; }
+.cx-checkoutpage-container button:hover, .cx-checkoutpage-container .button:hover {
+  background: #1D436F; }
+
+.cx-button-container {
+  width: 85%;
+  margin: 2em auto 1em;
+  background: white; }
+
+      </style>
+      <div class='cx-checkoutpage-outer cx-line'>        
+        <div class='cx-checkoutpage-container'>
 
             <div class="cx-section cx-phase-one">
 
@@ -191,7 +364,7 @@
 
         </div>
       </div>
-
+    </div>
      </body>
 </html>
        
