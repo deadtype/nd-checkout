@@ -1,0 +1,48 @@
+.cx-general-content {
+	width: 90%;
+	margin: 1em auto;
+	text-align: center;
+	line-height: 1.1;
+
+
+	.assitive-comment {
+		font-size: .65em;
+		width: 80%;
+		margin: auto;
+		background: white;
+				padding: .5em 0 0.75em;
+
+	}
+
+
+	.section-header {
+		margin-bottom: 2em;
+	}
+	.section-label {
+		background: white;
+		border: 2px solid $lightgray;
+		border-radius: 2em;
+		display: inline-block;
+		width: 1.2em;
+		height: 1.2em;
+		position: relative;
+		margin-bottom: .4em;
+		
+		.section-label-inner {
+			font-size: .55em;
+			font-weight: 700;
+			position: absolute;
+			color: $lightgray-linetext;
+			@include center;
+		}
+	}
+
+	.section-title {
+		font-weight: 700;
+		font-size: .8em;
+		background: white;
+		padding: .5em 0 0.75em;
+
+	}
+
+}

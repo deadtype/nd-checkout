@@ -1,0 +1,119 @@
+.cx-checkoutpage-container {
+
+
+		/* General Style */
+
+		input, select, textarea, label, .cx-select, textarea {
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			-ms-appearance: none;
+			-o-appearance: none;
+			appearance: none;
+			background: white;
+			color: #333;
+		}
+
+
+		/* Input Style */
+
+		input::-webkit-input-placeholder {
+			color: hsl(0,0%, 65%);
+			}
+
+			input::-moz-placeholder {
+			    color: hsl(0,0%, 65%);
+			}
+
+			input:-ms-input-placeholder {
+			    color: hsl(0,0%, 65%);
+			}
+
+
+			input {
+				font-size: .8em;
+
+				width: 100%;
+				margin: 0;
+				border: none;
+				border-top: 2px solid $lightgray;
+				border-bottom: 2px solid $lightgray;
+				border-radius: 0;
+				padding: 1em;
+				box-shadow: none;
+				font-weight: 600;
+				display: block;
+				background: white;
+
+			}
+			input + input, input + .cx-select, .cx-select + input {
+				margin-top: -2px;
+			}
+
+
+			/* Select Style */
+
+			.cx-select {
+				position: relative;
+								border-top: 2px solid $lightgray;
+				border-bottom: 2px solid $lightgray;
+				border-radius: 0;
+
+			}
+
+			.cx-select::after {
+				content: '';
+				position: absolute;
+				z-index: 1;
+				right: 1em;
+				top: 50%;
+				margin-top: 0px;
+				display: block;
+				width: 19px;
+				height: 9px;
+				background: url("../images/select-arrow-black.svg") no-repeat center center;
+				pointer-events: none;
+				background-size: cover;
+				 -webkit-transition: opacity 0.3s;
+	  			transition: opacity 0.3s;
+	  			opacity: .5;
+			}
+
+			.cx-select select {
+				width: 100%;
+				border-radius: 0;
+				font-weight: 600;
+				display: block;
+				position: relative;
+				 -webkit-transition: color 0.3s;
+			  			transition: color 0.3s;
+			}
+
+			select::-ms-expand {
+			  display:none;
+			}
+
+			.cx-select-inner {
+				border: none;
+				padding: 1em;
+				font-size: .8em;
+			}
+
+			/* Select Style */
+
+			textarea {
+				width: 100%;
+				margin: 0;
+				padding: 1em;
+				border: none;
+				border-top: 2px solid $lightgray;
+				border-bottom: 2px solid $lightgray;
+				border-radius: 0;
+				font-size: .8em;
+				font-weight: 600;
+			}
+
+			.text-message {
+				height: 6em;
+			}
+
+}

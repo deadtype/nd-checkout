@@ -1,0 +1,57 @@
+html {
+ -moz-box-sizing: border-box;
+ -webkit-box-sizing: border-box;
+ box-sizing: border-box;
+}
+
+*, *:before, *:after {
+ box-sizing: inherit;
+}
+
+body {
+	font-family: "minion-pro", sans-serif, serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.4em;
+	-webkit-font-smoothing: antialiased;
+	margin: 0;
+
+	h1 {
+		color: hotpink;
+	}
+}
+
+
+body, input, select, textarea, label, button { 
+	font-family: "futura-pt", sans-serif;
+
+}
+
+
+
+.cx-line {
+		position: relative;
+		padding: 0em 0;
+
+
+		&::before {
+			/* this is the vertical line */
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 50%;
+			margin-left: -2px;
+			height: 100%;
+			width: 2px;
+			z-index: -10;
+			background: $lightgray;
+		}
+}
+
+
+
+
+
+.cx-section + .cx-section {
+	margin-top: 5em;
+}
