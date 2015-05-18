@@ -162,8 +162,8 @@ body, input, select, textarea, label, button {
   margin: 0em auto 1em;
   text-align: center;
   line-height: 1.1; }
-  .cx-general-content.error {
-    margin-top: 0.35em; }
+  .cx-general-content.error .assitive-comment {
+    margin-top: 0.45em; }
   .cx-general-content .assitive-comment {
     font-size: .65em;
     width: 80%;
