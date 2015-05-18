@@ -52,7 +52,7 @@ body, input, select, textarea, label, button {
   clear: both; }
 
 .cx-checkoutpage-billboard {
-  height: 85%;
+  height: 75%;
   position: relative;
   background: url("../images/billboard.jpg");
   background-size: cover;
@@ -169,7 +169,7 @@ body, input, select, textarea, label, button {
     width: 80%;
     margin: auto;
     background: white;
-    margin-top: .75em;
+    margin-top: 1.5em;
     padding: .5em 0 0.75em; }
   .cx-general-content .section-header {
     margin-bottom: 2em; }
