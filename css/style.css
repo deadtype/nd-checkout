@@ -42,6 +42,8 @@ body, input, select, textarea, label, button {
   margin: 1em auto;
   text-align: center;
   line-height: 1.1; }
+  .cx-general-content.error {
+    margin-top: 0.35em; }
   .cx-general-content .assitive-comment {
     font-size: .65em;
     width: 80%;
@@ -78,6 +80,11 @@ body, input, select, textarea, label, button {
     font-size: .8em;
     background: white;
     padding: .5em 0 0.75em; }
+
+.error {
+  font-size: .7em;
+  font-weight: 700;
+  color: red; }
 
 .cx-checkoutpage-container {
   /* General Style */
