@@ -1,0 +1,97 @@
+
+.cx-billboard-tint {
+	height: 100%;
+		background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+
+
+	padding: 1em;
+	position: relative;
+
+		@include MQ(M) {
+	padding: 1.5em 0 1.5em 1.5em;
+
+		}
+}
+
+.cx-billboard-content {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	color: white
+}
+
+.billboard-header {
+		color: white;
+		text-align: left;
+		line-height: 1;
+		@include MQ(M) {
+			font-size: 1.5em;
+		}
+
+}
+
+.billboard-title {
+	font-size: 1.5em;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+.subhead {
+	font-weight: 700;
+	font-size: .6em;
+}
+
+.billboard-meta {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+
+.meta-section {
+
+			display: inline-block;
+				margin-right: 1.5em;
+	&.destination {
+		display: none;
+			@include MQ(M) {
+		display: inline-block;
+		}
+	}
+
+	@include MQ(M) {
+		display: inline-block;
+				margin-right: 4em;
+
+	}
+}
+
+.meta-section + .meta-section {
+	margin-top: 2em;
+
+	@include MQ(M) {
+		margin-top: 2em;
+	}
+}
+
+
+
+.meta-title {
+	display: block;
+	font-size:.3em;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: .5em;
+}
+
+.meta-info {
+	font-weight: 300;
+	font-size: 1.2em;
+
+}

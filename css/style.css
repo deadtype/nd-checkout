@@ -6,6 +6,9 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
+html, body {
+  height: 100%; }
+
 body {
   font-family: "minion-pro", sans-serif, serif;
   font-style: normal;
@@ -18,6 +21,9 @@ body {
 
 body, input, select, textarea, label, button {
   font-family: "futura-pt", sans-serif; }
+
+.cx-checkoutpage-outer {
+  height: 100%; }
 
 .cx-line {
   position: relative;
@@ -37,9 +43,123 @@ body, input, select, textarea, label, button {
 .cx-section + .cx-section {
   margin-top: 5em; }
 
+/**
+ * Clearfix
+ */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.cx-checkoutpage-billboard {
+  height: 75%;
+  position: relative;
+  background: url("../images/billboard.jpg");
+  background-size: cover;
+  background-position: bottom center; }
+  @media only screen and (min-width: 768px) {
+    .cx-checkoutpage-billboard {
+      position: fixed;
+      height: 100%;
+      width: calc(100% - 410px);
+      margin: 0; } }
+
+@media only screen and (min-width: 768px) {
+  .cx-checkoutpage-form {
+    width: 410px;
+    float: right;
+    box-shadow: 0px 0px 13px 13px rgba(0, 0, 0, 0.1);
+    border: 1px solid white;
+    z-index: 300;
+    position: relative; } }
+
+.cx-checkoutpage-form-inner {
+  height: 100%;
+  margin: 1em; }
+
+.cx-billboard-tint {
+  height: 100%;
+  background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, transparent), color-stop(100%, rgba(0, 0, 0, 0.65)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
+  /* IE6-9 */
+  padding: 1em;
+  position: relative; }
+  @media only screen and (min-width: 768px) {
+    .cx-billboard-tint {
+      padding: 1.5em 0 1.5em 1.5em; } }
+
+.cx-billboard-content {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  color: white; }
+
+.billboard-header {
+  color: white;
+  text-align: left;
+  line-height: 1; }
+  @media only screen and (min-width: 768px) {
+    .billboard-header {
+      font-size: 1.5em; } }
+
+.billboard-title {
+  font-size: 1.5em;
+  font-weight: 300;
+  text-transform: uppercase; }
+
+.subhead {
+  font-weight: 700;
+  font-size: .6em; }
+
+.billboard-meta {
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+
+.meta-section {
+  display: inline-block;
+  margin-right: 1.5em; }
+  .meta-section.destination {
+    display: none; }
+    @media only screen and (min-width: 768px) {
+      .meta-section.destination {
+        display: inline-block; } }
+  @media only screen and (min-width: 768px) {
+    .meta-section {
+      display: inline-block;
+      margin-right: 4em; } }
+
+.meta-section + .meta-section {
+  margin-top: 2em; }
+  @media only screen and (min-width: 768px) {
+    .meta-section + .meta-section {
+      margin-top: 2em; } }
+
+.meta-title {
+  display: block;
+  font-size: .3em;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: .5em; }
+
+.meta-info {
+  font-weight: 300;
+  font-size: 1.2em; }
+
 .cx-general-content {
   width: 90%;
-  margin: 1em auto;
+  margin: 0em auto 1em;
   text-align: center;
   line-height: 1.1; }
   .cx-general-content.error {
@@ -82,7 +202,7 @@ body, input, select, textarea, label, button {
     padding: .5em 0 0.75em; }
 
 .error {
-  font-size: .7em;
+  font-size: .8em;
   font-weight: 700;
   color: red; }
 

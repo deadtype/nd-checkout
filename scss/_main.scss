@@ -8,6 +8,10 @@ html {
  box-sizing: inherit;
 }
 
+html, body {
+	height: 100%;
+}
+
 body {
 	font-family: "minion-pro", sans-serif, serif;
 	font-style: normal;
@@ -27,6 +31,9 @@ body, input, select, textarea, label, button {
 
 }
 
+.cx-checkoutpage-outer {
+		height: 100%;
+	}
 
 
 .cx-line {
@@ -54,4 +61,18 @@ body, input, select, textarea, label, button {
 
 .cx-section + .cx-section {
 	margin-top: 5em;
+}
+
+
+
+/**
+ * Clearfix
+ */
+.clearfix {
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
 }

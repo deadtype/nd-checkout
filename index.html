@@ -11,190 +11,248 @@
 
     <body>
 
-    <div>
-      <style>
 
-      </style>
-      <div class='cx-checkoutpage-outer cx-line'>        
-        <div class='cx-checkoutpage-container'>
+      <div class='cx-checkoutpage-outer'>   
 
-            <div class="cx-section cx-phase-one">
-
-              <header class='cx-general-content'>
-                <div class='section-header'>
-                    <div class='section-label'>
-                      <div class='section-label-inner'>
-                        1
-                      </div>
-                    </div>
-
-                    <div class='section-title'>
-                      Login
-                    </div>
-                </div> 
-              </header>
-
-
-              <div class='cx-login-section'>
-                <input type="email" ng-model="login.email" placeholder='Email'>
-                <input type="password" ng-model="login.password" placeholder='Password'>
-                <div class='cx-button-container'>
-                  <button type="button" class='button' value="login">
-                    <div class='button-inner-text'>
-                      Login
-                    </div>
-                  </button>
-                </div>
-              </div>
-              <div class='cx-guest-section'>
-                <div class='cx-general-content'>
-                  <div class='assitive-comment'>
-                    or checkout as a guest<br>by entering your email below
+          <div class='cx-checkoutpage-billboard'>
+            <div class='cx-billboard-tint'>
+              <div class='cx-billboard-content'>
+                <div class='billboard-header'>
+                  <div class='subhead'>
+                    New District
                   </div>
-                </div>
-                <input type="email" ng-model="guest.email" placeholder='Email'>
-              </div>
-            </div>
-
-
-            <div class="cx-section cx-phase-two">
-
-              <header class='cx-general-content'>
-                <div class='section-header'>
-                    <div class='section-label'>
-                      <div class='section-label-inner'>
-                        2
-                      </div>
-                    </div>
-
-                    <div class='section-title'>
-                      Shipping
-                    </div>
-                </div> 
-              </header>
-
-              <div class='cx-form-content'>
-
-                <input type="text" ng-model="address.name" placeholder='Name'>
-                <input type="text" ng-model="address.a" placeholder='Shipping Address'>
-                <input type="text" ng-model="address.b" placeholder='Shipping Address 2'>
-                <input type="text" ng-model="address.city" placeholder='City'>
-
-                <div class='cx-select'>
-
-                <select class='cx-select-inner' name="Province">
-                  <option value='0' disabled selected style='display: none'>Select Province</option>
-                  <option value="AB">Alberta</option>
-                  <option value="BC">British Columbia</option>
-                  <option value="MB">Manitoba</option>
-                  <option value="NB">New Brunswick</option>
-                  <option value="NL">Newfoundland and Labrador</option>
-                  <option value="NS">Nova Scotia</option>
-                  <option value="ON">Ontario</option>
-                  <option value="PE">Prince Edward Island</option>
-                  <option value="QC">Quebec</option>
-                  <option value="SK">Saskatchewan</option>
-                  <option value="NT">Northwest Territories</option>
-                  <option value="NU">Nunavut</option>
-                  <option value="YT">Yukon</option>
-                </select>   
-              </div>
-
-                <input class="" ng-model="cart.postcode" id="postal_code" type="text" placeholder='Postal Code'>
-
-
-                <div class='cx-general-content'>
-                  <div class='assitive-comment'>
-                    We only ship to Canadians.<br><br>If you're in the US, and need Canadian wine, shoot us an email at info@newdistrict.ca
-
+                  <div class="billboard-title">
+                    Checkout
                   </div>
                 </div>
 
-              </div>
-            </div>
-
-
-            <div class="cx-section cx-phase-three">
-
-              <header class='cx-general-content'>
-                <div class='section-header'>
-                    <div class='section-label'>
-                      <div class='section-label-inner'>
-                        3
-                      </div>
-                    </div>
-
-                    <div class='section-title'>
-                      Which shipping<br>option would you like?
-                    </div>
-                </div> 
-              </header>
-
-              <div class='cx-form-content'>
-
-                <div class='cx-button-container'>
-
-                <button class="button button-shipping">
-                    <div class='button-inner-text'>
-                        Fedex 2-day: $10
-                    </div>
-                </button>
-
-                <button class="button button-shipping">
-                    <div class='button-inner-text'>
-                        Canada Post 3day: $20
-                    </div>
-                </button>
-              </div>
-
-
-                <div class='cx-general-content'>
-                  <div class='assitive-comment'>
-                    Would you like us to include a special message in the box?
-
-                  </div>
+                <div class='billboard-meta'>
+                        <div class='bottle-number meta-section'>
+                          <div class='meta-title'>
+                            bottles
+                          </div>
+                          <div class='meta-info'>
+                            12
+                          </div>
+                        </div>
+                        <div class='price-total meta-section'>
+                          <div class='meta-title'>
+                            Total
+                          </div>
+                          <div class='meta-info'>
+                            $990
+                          </div>
+                        </div>
+                        <div class='destination meta-section'>
+                          <div class='meta-title'>
+                            Ships To
+                          </div>
+                          <div class='meta-info'>
+                            Elin Tayyar, V5Z 4G6
+                          </div>
+                        </div>
                 </div>
-                <textarea class="text-message" type="text" ng-model="massage" placeholder='Enter Your Message here...' ></textarea>
+
               </div>
             </div>
 
 
 
-            <div class="cx-section cx-phase-four">
-              <header class='cx-general-content'>
-                <div class='section-header'>
-                    <div class='section-label'>
-                      <div class='section-label-inner'>
-                        4
+          </div>
+
+          <div class='cx-checkoutpage-form clearfix'>  
+            <div class='cx-checkoutpage-form-inner clearfix'>  
+
+              <div class='cx-line'>  
+
+                <div class='cx-checkoutpage-container'>
+
+                    <div class="cx-section cx-phase-one">
+
+                      <header class='cx-general-content'>
+                        <div class='section-header'>
+                            <div class='section-label'>
+                              <div class='section-label-inner'>
+                                1
+                              </div>
+                            </div>
+
+                            <div class='section-title'>
+                              Login
+                            </div>
+                        </div> 
+
+                      </header>
+
+
+                      <div class='cx-login-section'>
+                        <input type="email" ng-model="login.email" placeholder='Email'>
+                        <div class='cx-general-content error'>
+                          <div class='assitive-comment'>
+                            this email does not exist
+                          </div>
+                        </div>
+
+                        <input type="password" ng-model="login.password" placeholder='Password'>
+                        <div class='cx-button-container'>
+                          <button type="button" class='button' value="login">
+                            <div class='button-inner-text'>
+                              Login
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+
+                      <div class='cx-guest-section'>
+                        <div class='cx-general-content'>
+                          <div class='assitive-comment'>
+                            or checkout as a guest<br>by entering your email below
+                          </div>
+                        </div>
+                        <input type="email" ng-model="guest.email" placeholder='Email'>
                       </div>
                     </div>
 
-                    <div class='section-title'>
-                      Payment
-                    </div>
-                </div> 
-              </header>
 
-              <div class='cx-form-content'>
-                <input type="text" ng-model="CC.name" placeholder='Name on Credit Card'>
-                <input type="tel" ng-model="CC.number" placeholder='Credit Card Number'>
-                <input type="tel" ng-model="CC.date" placeholder='Expiry Date'>
-                <input type="tel" ng-model="CC.cvc" placeholder='CVC code'>
-                <input type="text" ng-model="CC.postalcode" placeholder='Billing Address Postal Code'>
+                    <div class="cx-section cx-phase-two">
+
+                      <header class='cx-general-content'>
+                        <div class='section-header'>
+                            <div class='section-label'>
+                              <div class='section-label-inner'>
+                                2
+                              </div>
+                            </div>
+
+                            <div class='section-title'>
+                              Shipping
+                            </div>
+                        </div> 
+                      </header>
+
+                      <div class='cx-form-content'>
+
+                        <input type="text" ng-model="address.name" placeholder='Name'>
+                        <input type="text" ng-model="address.a" placeholder='Shipping Address'>
+                        <input type="text" ng-model="address.b" placeholder='Shipping Address 2'>
+                        <input type="text" ng-model="address.city" placeholder='City'>
+
+                        <div class='cx-select'>
+
+                        <select class='cx-select-inner' name="Province">
+                          <option value='0' disabled selected style='display: none'>Select Province</option>
+                          <option value="AB">Alberta</option>
+                          <option value="BC">British Columbia</option>
+                          <option value="MB">Manitoba</option>
+                          <option value="NB">New Brunswick</option>
+                          <option value="NL">Newfoundland and Labrador</option>
+                          <option value="NS">Nova Scotia</option>
+                          <option value="ON">Ontario</option>
+                          <option value="PE">Prince Edward Island</option>
+                          <option value="QC">Quebec</option>
+                          <option value="SK">Saskatchewan</option>
+                          <option value="NT">Northwest Territories</option>
+                          <option value="NU">Nunavut</option>
+                          <option value="YT">Yukon</option>
+                        </select>   
+                      </div>
+
+                        <input class="" ng-model="cart.postcode" id="postal_code" type="text" placeholder='Postal Code'>
+
+
+                        <div class='cx-general-content'>
+                          <div class='assitive-comment'>
+                            We only ship to Canadians.<br><br>If you're in the US, and need Canadian wine, shoot us an email at info@newdistrict.ca
+
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+
+                    <div class="cx-section cx-phase-three">
+
+                      <header class='cx-general-content'>
+                        <div class='section-header'>
+                            <div class='section-label'>
+                              <div class='section-label-inner'>
+                                3
+                              </div>
+                            </div>
+
+                            <div class='section-title'>
+                              Which shipping<br>option would you like?
+                            </div>
+                        </div> 
+                      </header>
+
+                      <div class='cx-form-content'>
+
+                        <div class='cx-button-container'>
+
+                        <button class="button button-shipping">
+                            <div class='button-inner-text'>
+                                Fedex 2-day: $10
+                            </div>
+                        </button>
+
+                        <button class="button button-shipping">
+                            <div class='button-inner-text'>
+                                Canada Post 3day: $20
+                            </div>
+                        </button>
+                      </div>
+
+
+                        <div class='cx-general-content'>
+                          <div class='assitive-comment'>
+                            Would you like us to include a special message in the box?
+
+                          </div>
+                        </div>
+                        <textarea class="text-message" type="text" ng-model="massage" placeholder='Enter Your Message here...' ></textarea>
+                      </div>
+                    </div>
+
+
+
+                    <div class="cx-section cx-phase-four">
+                      <header class='cx-general-content'>
+                        <div class='section-header'>
+                            <div class='section-label'>
+                              <div class='section-label-inner'>
+                                4
+                              </div>
+                            </div>
+
+                            <div class='section-title'>
+                              Payment
+                            </div>
+                        </div> 
+                      </header>
+
+                      <div class='cx-form-content'>
+                        <input type="text" ng-model="CC.name" placeholder='Name on Credit Card'>
+                        <input type="tel" ng-model="CC.number" placeholder='Credit Card Number'>
+                        <input type="tel" ng-model="CC.date" placeholder='Expiry Date'>
+                        <input type="tel" ng-model="CC.cvc" placeholder='CVC code'>
+                        <input type="text" ng-model="CC.postalcode" placeholder='Billing Address Postal Code'>
+                      </div>
+
+                      <div class='cx-button-container'>
+                        <button class="button" ng-click="payment.phase=5">
+                            <div class='button-inner-text'>
+                                Submit
+                            </div>
+                        </button>
+                      </div>
+                    </div>
               </div>
-
-              <div class='cx-button-container'>
-                <button class="button" ng-click="payment.phase=5">
-                    <div class='button-inner-text'>
-                        Submit
-                    </div>
-                </button>
               </div>
             </div>
-
+          </div>
         </div>
-      </div>
-    </div>
      </body>
 </html>
        
